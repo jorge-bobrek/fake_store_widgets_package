@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../organisms/profile_list_widget.dart';
 
+/// Widget que representa una plantilla para una página que muestra una lista de perfiles.
+///
+/// Proporciona una estructura básica para mostrar una lista de perfiles de usuario.
 class ProfilePageTemplateWidget extends StatelessWidget {
   const ProfilePageTemplateWidget({
     super.key,
@@ -8,7 +11,9 @@ class ProfilePageTemplateWidget extends StatelessWidget {
     required this.profiles,
   });
 
+  /// El título que se mostrará en el AppBar.
   final String title;
+  /// Una lista de perfiles, donde cada perfil es un mapa con claves 'name' y 'email'.
   final List<Map<String, String>> profiles;
 
   @override

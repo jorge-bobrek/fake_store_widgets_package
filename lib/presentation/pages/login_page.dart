@@ -2,6 +2,9 @@
 import 'package:flutter/material.dart';
 import '../templates/login_template_widget.dart';
 
+/// Página que muestra un formulario de inicio de sesión.
+///
+/// Esta página hace uso de [LoginTemplateWidget].
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
