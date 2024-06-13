@@ -13,9 +13,7 @@ class OrganismsPage extends StatelessWidget {
         child: Column(
           children: [
             LoginFormWidget(
-              onLogin: (String email, String password) {
-                // Controlar inicio de sesión
-              },
+              onLogin: (String email, String password) {},
             ),
             const SizedBox(height: 16),
             const Expanded(
@@ -26,6 +24,13 @@ class OrganismsPage extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 16),
+            CardWithIconWidget(
+              title: "title",
+              subtitle: "subtitle",
+              icon: Icons.abc,
+              onPressed: () {},
+            )
           ],
         ),
       ),

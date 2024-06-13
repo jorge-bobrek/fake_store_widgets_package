@@ -7,7 +7,7 @@ class TemplatesTabPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Templates'),
@@ -15,6 +15,7 @@ class TemplatesTabPage extends StatelessWidget {
             tabs: [
               Tab(text: 'Login Template'),
               Tab(text: 'Profile List Template'),
+              Tab(text: 'Icon template'),
             ],
           ),
         ),
@@ -32,7 +33,14 @@ class TemplatesTabPage extends StatelessWidget {
                 {'name': 'Example Name 1', 'email': 'email@example.com'},
                 {'name': 'Example Name 2', 'email': 'email@example.com'},
               ],
-            )
+            ),
+            IconTemplate(title: "title", items: [
+              IconItem(
+                  title: "title",
+                  subtitle: "subtitle",
+                  icon: Icons.abc,
+                  onPressed: () {})
+            ])
           ],
         ),
       ),

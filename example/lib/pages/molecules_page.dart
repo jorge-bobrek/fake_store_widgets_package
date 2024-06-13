@@ -17,6 +17,7 @@ class MoleculesPage extends StatelessWidget {
             const SizedBox(height: 16),
             const ProfileCardWidget(
                 name: 'John Doe', email: 'john@example.com'),
+                LabelledIconWidget(label: "Example", icon: Icons.abc, onPressed: () {}),
           ],
         ),
       ),

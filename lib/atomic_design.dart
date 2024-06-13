@@ -1,10 +1,15 @@
 export 'package:atomic_design/presentation/atoms/button_widget.dart';
 export 'package:atomic_design/presentation/atoms/label_widget.dart';
+export 'package:atomic_design/presentation/atoms/icon_button_widget.dart';
 export 'package:atomic_design/presentation/molecules/labelled_input_widget.dart';
 export 'package:atomic_design/presentation/molecules/profile_card_widget.dart';
+export 'package:atomic_design/presentation/molecules/labelled_icon_widget.dart.dart';
 export 'package:atomic_design/presentation/organisms/login_form_widget.dart';
 export 'package:atomic_design/presentation/organisms/profile_list_widget.dart';
+export 'package:atomic_design/presentation/organisms/card_with_icon_widget.dart';
 export 'package:atomic_design/presentation/pages/login_page.dart';
 export 'package:atomic_design/presentation/pages/profile_list_page.dart';
+export 'package:atomic_design/presentation/pages/icon_page.dart';
 export 'package:atomic_design/presentation/templates/profile_page_template_widget.dart';
 export 'package:atomic_design/presentation/templates/login_template_widget.dart';
+export 'package:atomic_design/presentation/templates/icon_template.dart';

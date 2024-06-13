@@ -7,7 +7,7 @@ class PagesTabPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Pages'),
@@ -15,6 +15,7 @@ class PagesTabPage extends StatelessWidget {
             tabs: [
               Tab(text: 'Login Page'),
               Tab(text: 'Profile List Page'),
+              Tab(text: 'Icon Page'),
             ],
           ),
         ),
@@ -22,6 +23,7 @@ class PagesTabPage extends StatelessWidget {
           children: [
             LoginPage(),
             ProfileListPage(),
+            IconPage()
           ],
         ),
       ),

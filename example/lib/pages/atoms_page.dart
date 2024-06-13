@@ -16,6 +16,10 @@ class AtomsPage extends StatelessWidget {
             ButtonWidget(label: 'Click Me', onPressed: () {}),
             const SizedBox(height: 16),
             const LabelWidget(text: 'This is a label'),
+            IconButtonWidget(
+              icon: Icons.abc,
+              onPressed: () {},
+            )
           ],
         ),
       ),
