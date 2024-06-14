@@ -8,6 +8,9 @@ class IconItemModel {
   /// The subtitle of the item.
   final String subtitle;
 
+  /// The label to display next to the icon.
+  final String label;
+
   /// The icon to display in the item.
   final IconData icon;
 
@@ -16,10 +19,11 @@ class IconItemModel {
 
   /// Creates an [IconItemModel].
   ///
-  /// The [title], [subtitle], [icon], and [onPressed] parameters must not be null.
+  /// The [title], [subtitle], [label], [icon], and [onPressed] parameters must not be null.
   IconItemModel(
       {required this.title,
       required this.subtitle,
+      required this.label,
       required this.icon,
       required this.onPressed});
 }

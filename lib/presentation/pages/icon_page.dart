@@ -16,19 +16,25 @@ class IconPage extends StatelessWidget {
         IconItemModel(
           title: 'Inicio',
           subtitle: 'Ir a la página principal',
+          label: 'Página Principal',
           icon: Icons.home,
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Boton Inicio presionado')));
+                const SnackBar(
+                duration: Duration(seconds: 1),
+                content: Text('Botón Inicio presionado')));
           },
         ),
         IconItemModel(
           title: 'Ajustes',
           subtitle: 'Ir a la configuración',
+          label: 'Configuración',
           icon: Icons.settings,
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Boton Ajustes presionado')));
+                const SnackBar(
+                duration: Duration(seconds: 1),
+                content: Text('Botón Ajustes presionado')));
           },
         ),
       ],

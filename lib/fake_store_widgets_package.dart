@@ -13,3 +13,5 @@ export 'package:fake_store_widgets_package/presentation/pages/icon_page.dart';
 export 'package:fake_store_widgets_package/presentation/templates/profile_page_template.dart';
 export 'package:fake_store_widgets_package/presentation/templates/login_template.dart';
 export 'package:fake_store_widgets_package/presentation/templates/icon_template.dart';
+export 'package:fake_store_widgets_package/data/models/icon_item_model.dart';
+export 'package:fake_store_widgets_package/data/models/profile_model.dart';

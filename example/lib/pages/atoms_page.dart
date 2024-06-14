@@ -13,12 +13,29 @@ class AtomsPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ButtonWidget(label: 'Haz click', onPressed: () {}),
+            /// An example of [ButtonWidget].
+            ButtonWidget(
+              label: 'Clickéame',
+              onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                    duration: Duration(seconds: 1),
+                    content: Text('Botón presionado')),
+              ),
+            ),
             const SizedBox(height: 16),
+
+            /// An example of [LabelWidget].
             const LabelWidget(text: 'Esto es un label'),
+            const SizedBox(height: 8),
+
+            /// An example of [IconButtonWidget].
             IconButtonWidget(
-              icon: Icons.abc,
-              onPressed: () {},
+              icon: Icons.info,
+              onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                    duration: Duration(seconds: 1),
+                    content: Text('Ícono presionado')),
+              ),
             )
           ],
         ),

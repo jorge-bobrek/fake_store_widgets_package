@@ -21,10 +21,19 @@ class TemplatesTabPage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
+            /// An example of [LoginTemplate].
             LoginTemplate(
               title: 'Ejemplo de Inicio de Sesión',
-              onLogin: (String email, String password) {},
+              onLogin: (String email, String password) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                      duration: const Duration(seconds: 1),
+                      content: Text('Iniciaste sesión como $email')),
+                );
+              },
             ),
+
+            /// An example of [ProfilePageTemplate].
             const ProfilePageTemplate(
               title: 'Ejemplo de Lista de Perfiles',
               profiles: [
@@ -38,13 +47,22 @@ class TemplatesTabPage extends StatelessWidget {
                 ),
               ],
             ),
+
+            /// An example of [IconTemplate].
             IconTemplate(title: "Ejemplo de Íconos", items: [
               IconItemModel(
                   title: "Título",
                   subtitle: "Subtítulo",
-                  icon: Icons.abc,
-                  onPressed: () {})
-            ])
+                  label: 'Info',
+                  icon: Icons.info,
+                  onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                        duration: Duration(seconds: 1),
+                        content: Text('Ícono presionado')),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),

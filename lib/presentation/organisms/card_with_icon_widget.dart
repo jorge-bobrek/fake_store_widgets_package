@@ -8,12 +8,20 @@ class CardWithIconWidget extends StatelessWidget {
   /// Creates a [CardWithIconWidget].
   ///
   /// The [title], [subtitle], [icon], and [onPressed] parameters must not be null.
-  const CardWithIconWidget({super.key, required this.title, required this.subtitle, required this.icon, required this.onPressed});
+  const CardWithIconWidget(
+      {super.key,
+      required this.title,
+      required this.subtitle,
+      required this.label,
+      required this.icon,
+      required this.onPressed});
 
   /// The title of the card.
   final String title;
   /// The subtitle of the card.
   final String subtitle;
+  /// The label to display next to the icon.
+  final String label;
   /// The icon to display in the button.
   final IconData icon;
   /// The callback that is called when the button is tapped.
@@ -28,7 +36,7 @@ class CardWithIconWidget extends StatelessWidget {
             title: Text(title),
             subtitle: Text(subtitle),
           ),
-          LabelledIconWidget(label: title, icon: icon, onPressed: onPressed),
+          LabelledIconWidget(label: label, icon: icon, onPressed: onPressed),
         ],
       ),
     );

@@ -10,6 +10,9 @@ void main() {
   runApp(const Showcase());
 }
 
+/// A page that showcases various widgets in the Atomic Design system.
+///
+/// This page displays examples of atoms, molecules, organisms, templates and pages.
 class Showcase extends StatelessWidget {
   const Showcase({super.key});
 

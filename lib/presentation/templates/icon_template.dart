@@ -27,6 +27,7 @@ class IconTemplate extends StatelessWidget {
             return CardWithIconWidget(
               title: item.title,
               subtitle: item.subtitle,
+              label: item.label,
               icon: item.icon,
               onPressed: item.onPressed,
             );

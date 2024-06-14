@@ -13,7 +13,9 @@ class LoginPage extends StatelessWidget {
       title: 'Iniciar Sesión',
       onLogin: (email, password) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Iniciaste sesión como: $email')),
+          SnackBar(
+              duration: const Duration(seconds: 1),
+              content: Text('Iniciaste sesión como: $email')),
         );
       },
     );
