@@ -1,6 +1,5 @@
-// lib/src/pages/login_page.dart
+import 'package:fake_store_widgets_package/presentation/templates/login_template.dart';
 import 'package:flutter/material.dart';
-import '../templates/login_template.dart';
 
 /// A page that displays the login form.
 ///
@@ -11,10 +10,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LoginTemplate(
-      title: 'Login Page',
+      title: 'Iniciar Sesión',
       onLogin: (email, password) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Logged in as $email')),
+          SnackBar(content: Text('Iniciaste sesión como: $email')),
         );
       },
     );

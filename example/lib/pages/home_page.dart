@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Atomic Design Showcase')),
+      appBar: AppBar(title: const Text('Demostración de Atomic Design')),
       body: ListView(
         children: [
           ListTile(

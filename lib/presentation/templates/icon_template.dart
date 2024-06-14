@@ -1,4 +1,5 @@
-import 'package:atomic_design/presentation/organisms/card_with_icon_widget.dart';
+import 'package:fake_store_widgets_package/data/models/icon_item_model.dart';
+import 'package:fake_store_widgets_package/presentation/organisms/card_with_icon_widget.dart';
 import 'package:flutter/material.dart';
 
 /// A template that displays a list of [CardWithIconWidget] items.
@@ -6,7 +7,7 @@ class IconTemplate extends StatelessWidget {
   /// The title of the template, displayed in the app bar.
   final String title;
   /// The list of items to display.
-  final List<IconItem> items;
+  final List<IconItemModel> items;
 
   /// Creates an [IconTemplate].
   ///
@@ -34,21 +35,4 @@ class IconTemplate extends StatelessWidget {
       ),
     );
   }
-}
-
-/// A model class representing an item with a title, subtitle, icon, and callback.
-class IconItem {
-  /// The title of the item.
-  final String title;
-  /// The subtitle of the item.
-  final String subtitle;
-  /// The icon to display in the item.
-  final IconData icon;
-  /// The callback that is called when the icon button is tapped.
-  final VoidCallback onPressed;
-
-  /// Creates an [IconItem].
-  ///
-  /// The [title], [subtitle], [icon], and [onPressed] parameters must not be null.
-  IconItem({required this.title, required this.subtitle, required this.icon, required this.onPressed});
 }

@@ -1,5 +1,6 @@
+import 'package:fake_store_widgets_package/data/models/profile_model.dart';
+import 'package:fake_store_widgets_package/presentation/molecules/profile_card_widget.dart';
 import 'package:flutter/material.dart';
-import '../molecules/profile_card_widget.dart';
 
 /// A widget that displays a list of profile cards.
 class ProfileListWidget extends StatelessWidget {
@@ -9,7 +10,7 @@ class ProfileListWidget extends StatelessWidget {
   const ProfileListWidget({super.key, required this.profiles});
 
   /// The list of profiles to display.
-  final List<Profile> profiles;
+  final List<ProfileModel> profiles;
 
   @override
   Widget build(BuildContext context) {
@@ -24,21 +25,4 @@ class ProfileListWidget extends StatelessWidget {
       },
     );
   }
-}
-
-/// A model class representing a profile.
-class Profile {
-  /// Creates a [Profile].
-  ///
-  /// The [name] and [email] parameters must not be null.
-  const Profile({
-    required this.name,
-    required this.email,
-  });
-
-  /// The name of the profile.
-  final String name;
-
-  /// The email of the profile.
-  final String email;
 }

@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  atomic_design:
+  fake_store_widgets_package:
     path: ../
 
 

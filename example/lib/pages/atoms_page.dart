@@ -1,6 +1,6 @@
 
-import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
+import 'package:fake_store_widgets_package/fake_store_widgets_package.dart';
 
 class AtomsPage extends StatelessWidget {
   const AtomsPage({super.key});

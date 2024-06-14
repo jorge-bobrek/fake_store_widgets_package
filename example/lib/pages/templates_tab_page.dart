@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:atomic_design/atomic_design.dart';
+import 'package:fake_store_widgets_package/fake_store_widgets_package.dart';
 
 class TemplatesTabPage extends StatelessWidget {
   const TemplatesTabPage({super.key});
@@ -28,12 +28,18 @@ class TemplatesTabPage extends StatelessWidget {
             const ProfilePageTemplate(
               title: 'Ejemplo de Lista de Perfiles',
               profiles: [
-                {'name': 'Example Name 1', 'email': 'email@example.com'},
-                {'name': 'Example Name 2', 'email': 'email@example.com'},
+                ProfileModel(
+                  name: 'John Cena',
+                  email: 'john.cena@ejemplo.com',
+                ),
+                ProfileModel(
+                  name: 'Will Smith',
+                  email: 'will.smith@ejemplo.com',
+                ),
               ],
             ),
             IconTemplate(title: "Ejemplo de Íconos", items: [
-              IconItem(
+              IconItemModel(
                   title: "Título",
                   subtitle: "Subtítulo",
                   icon: Icons.abc,

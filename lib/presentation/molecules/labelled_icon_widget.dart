@@ -1,5 +1,5 @@
-import 'package:atomic_design/presentation/atoms/icon_button_widget.dart';
-import 'package:atomic_design/presentation/atoms/label_widget.dart';
+import 'package:fake_store_widgets_package/presentation/atoms/icon_button_widget.dart';
+import 'package:fake_store_widgets_package/presentation/atoms/label_widget.dart';
 import 'package:flutter/material.dart';
 
 /// A widget that combines a label and an icon button.

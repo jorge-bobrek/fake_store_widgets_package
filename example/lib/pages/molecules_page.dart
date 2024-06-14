@@ -1,5 +1,5 @@
-import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
+import 'package:fake_store_widgets_package/fake_store_widgets_package.dart';
 
 class MoleculesPage extends StatelessWidget {
   const MoleculesPage({super.key});
@@ -16,7 +16,7 @@ class MoleculesPage extends StatelessWidget {
                 label: 'Nombre de usuario', controller: TextEditingController()),
             const SizedBox(height: 16),
             const ProfileCardWidget(
-                name: 'John Cena', email: 'john@ejemplo.com'),
+                name: 'John Cena', email: 'john.cena@ejemplo.com'),
                 LabelledIconWidget(label: "Ejemplo", icon: Icons.abc, onPressed: () {}),
           ],
         ),

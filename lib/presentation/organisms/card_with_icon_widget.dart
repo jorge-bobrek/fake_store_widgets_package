@@ -1,4 +1,4 @@
-import 'package:atomic_design/presentation/molecules/labelled_icon_widget.dart';
+import 'package:fake_store_widgets_package/presentation/molecules/labelled_icon_widget.dart';
 import 'package:flutter/material.dart';
 
 /// A card widget that displays a title, subtitle, and an icon button.
@@ -9,7 +9,7 @@ class CardWithIconWidget extends StatelessWidget {
   ///
   /// The [title], [subtitle], [icon], and [onPressed] parameters must not be null.
   const CardWithIconWidget({super.key, required this.title, required this.subtitle, required this.icon, required this.onPressed});
-  
+
   /// The title of the card.
   final String title;
   /// The subtitle of the card.

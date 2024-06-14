@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:atomic_design/atomic_design.dart';
+import 'package:fake_store_widgets_package/fake_store_widgets_package.dart';
 
 class PagesTabPage extends StatelessWidget {
   const PagesTabPage({super.key});

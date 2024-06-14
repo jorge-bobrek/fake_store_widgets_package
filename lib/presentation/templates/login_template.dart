@@ -1,5 +1,5 @@
+import 'package:fake_store_widgets_package/presentation/organisms/login_form_widget.dart';
 import 'package:flutter/material.dart';
-import '../organisms/login_form_widget.dart';
 
 /// A template that displays a login form.
 ///

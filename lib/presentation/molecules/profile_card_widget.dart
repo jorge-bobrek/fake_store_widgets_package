@@ -1,5 +1,5 @@
-import 'package:atomic_design/presentation/atoms/label_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:fake_store_widgets_package/presentation/atoms/label_widget.dart';
 
 /// A card widget that displays a profile picture, name, and email.
 class ProfileCardWidget extends StatelessWidget {

@@ -1,5 +1,5 @@
-import 'package:atomic_design/presentation/atoms/button_widget.dart';
-import 'package:atomic_design/presentation/molecules/labelled_input_widget.dart';
+import 'package:fake_store_widgets_package/presentation/atoms/button_widget.dart';
+import 'package:fake_store_widgets_package/presentation/molecules/labelled_input_widget.dart';
 import 'package:flutter/material.dart';
 
 /// A widget that displays a login form.
@@ -18,15 +18,15 @@ class LoginFormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        LabelledInputWidget(label: 'Email', controller: emailController),
+        LabelledInputWidget(label: 'Correo', controller: emailController),
         const SizedBox(height: 20),
         LabelledInputWidget(
-            label: 'Password',
+            label: 'Contraseña',
             controller: passwordController,
             obscureText: true),
         const SizedBox(height: 20),
         ButtonWidget(
-            label: 'Login',
+            label: 'Iniciar Sesión',
             onPressed: () {
               onLogin(emailController.text, passwordController.text);
             }),

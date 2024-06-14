@@ -1,6 +1,6 @@
-import 'package:atomic_design/presentation/organisms/profile_list_widget.dart';
+import 'package:fake_store_widgets_package/data/models/profile_model.dart';
+import 'package:fake_store_widgets_package/presentation/templates/profile_page_template.dart';
 import 'package:flutter/material.dart';
-import '../templates/profile_page_template.dart';
 
 /// A page that displays a list of profiles.
 ///
@@ -11,15 +11,15 @@ class ProfileListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ProfilePageTemplate(
-      title: 'Profile List',
+      title: 'Lista de perfiles',
       profiles: [
-        Profile(
-          name: 'John Doe',
-          email: 'john.doe@example.com',
+        ProfileModel(
+          name: 'John Cena',
+          email: 'john.cena@ejemplo.com',
         ),
-        Profile(
-          name: 'Jane Smith',
-          email: 'jane.smith@example.com',
+        ProfileModel(
+          name: 'Will Smith',
+          email: 'will.smith@ejemplo.com',
         ),
       ],
     );

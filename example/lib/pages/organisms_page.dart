@@ -1,5 +1,5 @@
-import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
+import 'package:fake_store_widgets_package/fake_store_widgets_package.dart';
 
 class OrganismsPage extends StatelessWidget {
   const OrganismsPage({super.key});
@@ -19,8 +19,14 @@ class OrganismsPage extends StatelessWidget {
             const Expanded(
               child: ProfileListWidget(
                 profiles: [
-                  {'name': 'John Cena', 'email': 'john@ejemplo.com'},
-                  {'name': 'Will Smith', 'email': 'will@ejemplo.com'},
+                  ProfileModel(
+                    name: 'John Cena',
+                    email: 'john.cena@ejemplo.com',
+                  ),
+                  ProfileModel(
+                    name: 'Will Smith',
+                    email: 'will.smith@ejemplo.com',
+                  ),
                 ],
               ),
             ),

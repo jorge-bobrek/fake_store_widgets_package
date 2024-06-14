@@ -1,5 +1,6 @@
+import 'package:fake_store_widgets_package/data/models/profile_model.dart';
+import 'package:fake_store_widgets_package/presentation/organisms/profile_list_widget.dart';
 import 'package:flutter/material.dart';
-import '../organisms/profile_list_widget.dart';
 
 /// A template that displays a list of profiles.
 class ProfilePageTemplate extends StatelessWidget {
@@ -15,7 +16,7 @@ class ProfilePageTemplate extends StatelessWidget {
   /// The title to be displayed in the AppBar.
   final String title;
   /// The list of profiles to display.
-  final List<Profile> profiles;
+  final List<ProfileModel> profiles;
 
   @override
   Widget build(BuildContext context) {
