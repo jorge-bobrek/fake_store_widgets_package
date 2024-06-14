@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
 import '../organisms/login_form_widget.dart';
 
-/// Widget que representa una plantilla para la página de inicio de sesión.
+/// A template that displays a login form.
 ///
-/// Proporciona una estructura básica para una página de inicio de sesión.
-/// Contiene un formulario de inicio de sesión con campos para email y contraseña.
-class LoginTemplateWidget extends StatelessWidget {
-  const LoginTemplateWidget({
+/// Provides a basic structure for a login page.
+/// Contains a login form with fields for email and password.
+class LoginTemplate extends StatelessWidget {
+  /// Creates a [LoginTemplate].
+  ///
+  /// The [title] and [onLogin] parameters must not be null.
+  const LoginTemplate({
     super.key,
     required this.title,
     required this.onLogin,
   });
 
-  /// El título que se mostrará en el AppBar.
+  /// The title to be displayed in the AppBar.
   final String title;
-  /// La función que se ejecutará cuando se presione el botón de inicio de sesión.
-  /// Recibe el email y la contraseña como parámetros.
+
+  /// The callback that is called when the login button is tapped.
+  /// Receives the email and password as parameters.
   final void Function(String email, String password) onLogin;
 
   @override

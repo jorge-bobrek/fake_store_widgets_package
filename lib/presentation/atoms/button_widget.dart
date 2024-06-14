@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-/// Widget que representa un botón personalizado.
-///
-/// Puede ser utilizado en diferentes partes de la aplicación.
+/// A customizable button widget.
 class ButtonWidget extends StatelessWidget {
+  /// Creates a [ButtonWidget].
+  ///
+  /// The [label] and [onPressed] parameters must not be null.
   const ButtonWidget({
     super.key,
     required this.label,
     required this.onPressed,
   });
 
-  /// El texto que se mostrará en el botón.
+  /// The text to display on the button.
   final String label;
-  /// La función que se ejecutará cuando el botón sea presionado.
+  /// The callback that is called when the button is tapped.
   final VoidCallback onPressed;
 
   @override

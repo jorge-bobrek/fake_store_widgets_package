@@ -8,14 +8,14 @@ class AtomsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Atoms')),
+      appBar: AppBar(title: const Text('Átomos')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ButtonWidget(label: 'Click Me', onPressed: () {}),
+            ButtonWidget(label: 'Haz click', onPressed: () {}),
             const SizedBox(height: 16),
-            const LabelWidget(text: 'This is a label'),
+            const LabelWidget(text: 'Esto es un label'),
             IconButtonWidget(
               icon: Icons.abc,
               onPressed: () {},

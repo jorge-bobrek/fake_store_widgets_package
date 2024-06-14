@@ -1,19 +1,20 @@
 import 'package:atomic_design/presentation/atoms/label_widget.dart';
 import 'package:flutter/material.dart';
 
-/// Widget que muestra la información del perfil de un usuario en forma de tarjeta.
-///
-/// Se utiliza para mostrar información básica del perfil de un usuario.
+/// A card widget that displays a profile picture, name, and email.
 class ProfileCardWidget extends StatelessWidget {
+  /// Creates a [ProfileCardWidget].
+  ///
+  /// The [name] and [email] parameters must not be null.
   const ProfileCardWidget({
     super.key,
     required this.name,
     required this.email,
   });
 
-  /// El nombre del usuario.
+  /// The name of the profile.
   final String name;
-  /// El correo electrónico del usuario.
+  /// The email of the profile.
   final String email;
 
   @override

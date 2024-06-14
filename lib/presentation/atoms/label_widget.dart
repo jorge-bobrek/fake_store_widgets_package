@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-/// Widget de texto simple que muestra una etiqueta.
-///
-/// Se utiliza para mostrar texto en diferentes partes de la aplicación.
+/// A widget that displays a label.
 class LabelWidget extends StatelessWidget {
+  /// Creates a [LabelWidget].
+  ///
+  /// The [text] parameter must not be null.
   const LabelWidget({
     super.key,
     required this.text,
   });
 
-  /// El texto que se mostrará en la etiqueta.
+  /// The text to display as the label.
   final String text;
 
   @override

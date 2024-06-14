@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-/// Widget que combina una etiqueta con un campo de entrada de texto.
-///
-/// Se utiliza para mostrar un campo de entrada de texto con una etiqueta asociada.
+/// A widget that combines a label and a text input field.
 class LabelledInputWidget extends StatelessWidget {
+  /// Creates a [LabelledInputWidget].
+  ///
+  /// The [label] and [controller] parameters must not be null.
   const LabelledInputWidget({
     super.key,
     required this.label,
@@ -11,13 +12,13 @@ class LabelledInputWidget extends StatelessWidget {
     this.obscureText = false,
   });
 
-  /// El texto de la etiqueta.
+  /// The text to display as the label.
   final String label;
-  /// El controlador del campo de texto.
+  /// The controller for the text input field.
   final TextEditingController controller;
-  /// Si el texto debe estar oculto (por ejemplo, para contraseñas).
-
+  /// Whether the text should be hidden (for example, for passwords).
   final bool obscureText;
+
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,6 +1,9 @@
 import 'package:atomic_design/presentation/templates/icon_template.dart';
 import 'package:flutter/material.dart';
 
+/// A page that displays a list of icons with labels and actions.
+///
+/// This page uses [IconTemplate] to render the content.
 class IconPage extends StatelessWidget {
   const IconPage({super.key});
 

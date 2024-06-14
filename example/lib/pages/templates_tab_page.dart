@@ -10,34 +10,32 @@ class TemplatesTabPage extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Templates'),
+          title: const Text('Plantillas'),
           bottom: const TabBar(
             tabs: [
-              Tab(text: 'Login Template'),
-              Tab(text: 'Profile List Template'),
-              Tab(text: 'Icon template'),
+              Tab(text: 'Plantilla de inicio de sesión'),
+              Tab(text: 'Plantilla de lista de perfiles'),
+              Tab(text: 'Plantilla de íconos'),
             ],
           ),
         ),
         body: TabBarView(
           children: [
-            LoginTemplateWidget(
-              title: 'Login Example',
-              onLogin: (String email, String password) {
-                // Controlar inicio de sesión
-              },
+            LoginTemplate(
+              title: 'Ejemplo de Inicio de Sesión',
+              onLogin: (String email, String password) {},
             ),
-            const ProfilePageTemplateWidget(
-              title: 'Profiles Example',
+            const ProfilePageTemplate(
+              title: 'Ejemplo de Lista de Perfiles',
               profiles: [
                 {'name': 'Example Name 1', 'email': 'email@example.com'},
                 {'name': 'Example Name 2', 'email': 'email@example.com'},
               ],
             ),
-            IconTemplate(title: "title", items: [
+            IconTemplate(title: "Ejemplo de Íconos", items: [
               IconItem(
-                  title: "title",
-                  subtitle: "subtitle",
+                  title: "Título",
+                  subtitle: "Subtítulo",
                   icon: Icons.abc,
                   onPressed: () {})
             ])

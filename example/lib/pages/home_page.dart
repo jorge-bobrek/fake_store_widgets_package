@@ -11,31 +11,31 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            title: const Text('Atoms'),
+            title: const Text('Átomos'),
             onTap: () {
               Navigator.pushNamed(context, '/atoms');
             },
           ),
           ListTile(
-            title: const Text('Molecules'),
+            title: const Text('Moléculas'),
             onTap: () {
               Navigator.pushNamed(context, '/molecules');
             },
           ),
           ListTile(
-            title: const Text('Organisms'),
+            title: const Text('Organismos'),
             onTap: () {
               Navigator.pushNamed(context, '/organisms');
             },
           ),
           ListTile(
-            title: const Text('Templates'),
+            title: const Text('Plantillas'),
             onTap: () {
               Navigator.pushNamed(context, '/templates');
             },
           ),
           ListTile(
-            title: const Text('Pages'),
+            title: const Text('Páginas'),
             onTap: () {
               Navigator.pushNamed(context, '/pages');
             },

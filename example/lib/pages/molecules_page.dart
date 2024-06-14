@@ -7,17 +7,17 @@ class MoleculesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Molecules')),
+      appBar: AppBar(title: const Text('Moléculas')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             LabelledInputWidget(
-                label: 'Username', controller: TextEditingController()),
+                label: 'Nombre de usuario', controller: TextEditingController()),
             const SizedBox(height: 16),
             const ProfileCardWidget(
-                name: 'John Doe', email: 'john@example.com'),
-                LabelledIconWidget(label: "Example", icon: Icons.abc, onPressed: () {}),
+                name: 'John Cena', email: 'john@ejemplo.com'),
+                LabelledIconWidget(label: "Ejemplo", icon: Icons.abc, onPressed: () {}),
           ],
         ),
       ),

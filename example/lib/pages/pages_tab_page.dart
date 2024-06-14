@@ -10,12 +10,12 @@ class PagesTabPage extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Pages'),
+          title: const Text('Páginas'),
           bottom: const TabBar(
             tabs: [
-              Tab(text: 'Login Page'),
-              Tab(text: 'Profile List Page'),
-              Tab(text: 'Icon Page'),
+              Tab(text: 'Página de inicio de sesión'),
+              Tab(text: 'Página de lista de perfiles'),
+              Tab(text: 'Página de íconos'),
             ],
           ),
         ),

@@ -7,7 +7,7 @@ class OrganismsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Organisms')),
+      appBar: AppBar(title: const Text('Organismos')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -19,15 +19,15 @@ class OrganismsPage extends StatelessWidget {
             const Expanded(
               child: ProfileListWidget(
                 profiles: [
-                  {'name': 'John Doe', 'email': 'john@example.com'},
-                  {'name': 'Jane Smith', 'email': 'jane@example.com'},
+                  {'name': 'John Cena', 'email': 'john@ejemplo.com'},
+                  {'name': 'Will Smith', 'email': 'will@ejemplo.com'},
                 ],
               ),
             ),
             const SizedBox(height: 16),
             CardWithIconWidget(
-              title: "title",
-              subtitle: "subtitle",
+              title: "Título",
+              subtitle: "Subtítulo",
               icon: Icons.abc,
               onPressed: () {},
             )
