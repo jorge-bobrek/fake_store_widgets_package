@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 /// A widget that displays a label.
-class LabelWidget extends StatelessWidget {
-  /// Creates a [LabelWidget].
+class TitleWidget extends StatelessWidget {
+  /// Creates a [TitleWidget].
   ///
   /// The [text] parameter must not be null.
-  const LabelWidget({
+  const TitleWidget({
     super.key,
     required this.text,
     required this.size,
@@ -21,6 +21,8 @@ class LabelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text ?? '',
+      overflow: TextOverflow.ellipsis,
+      maxLines: 3,
       style: TextStyle(fontSize: size, fontWeight: FontWeight.bold),
     );
   }

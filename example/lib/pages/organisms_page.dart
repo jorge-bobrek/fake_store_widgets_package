@@ -13,15 +13,15 @@ class OrganismsPage extends StatelessWidget {
         child: Column(
           children: [
             /// An example of [LoginFormWidget].
-            LoginFormWidget(
-              onLogin: (String email, String password) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                      duration: const Duration(seconds: 1),
-                      content: Text('Iniciaste sesión como $email')),
-                );
-              },
-            ),
+            //LoginFormWidget(
+            //  onLogin: (String email, String password) {
+            //    ScaffoldMessenger.of(context).showSnackBar(
+            //      SnackBar(
+            //          duration: const Duration(seconds: 1),
+            //          content: Text('Iniciaste sesión como $email')),
+            //    );
+            //  },
+            //),
             const SizedBox(height: 16),
 
             /// An example of [CardWithIconWidget].

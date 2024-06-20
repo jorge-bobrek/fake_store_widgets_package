@@ -22,16 +22,16 @@ class TemplatesTabPage extends StatelessWidget {
         body: TabBarView(
           children: [
             /// An example of [LoginTemplate].
-            LoginTemplate(
-              title: 'Ejemplo de Inicio de Sesión',
-              onLogin: (String email, String password) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                      duration: const Duration(seconds: 1),
-                      content: Text('Iniciaste sesión como $email')),
-                );
-              },
-            ),
+            //LoginTemplate(
+            //  title: 'Ejemplo de Inicio de Sesión',
+            //  onLogin: (String email, String password) {
+            //    ScaffoldMessenger.of(context).showSnackBar(
+            //      SnackBar(
+            //          duration: const Duration(seconds: 1),
+            //          content: Text('Iniciaste sesión como $email')),
+            //    );
+            //  },
+            //),
 
             /// An example of [ProfilePageTemplate].
             const ProfilePageTemplate(

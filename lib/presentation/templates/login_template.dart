@@ -1,38 +1,54 @@
 import 'package:fake_store_widgets_package/presentation/organisms/login_form_widget.dart';
+import 'package:fake_store_widgets_package/presentation/templates/auth_template.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-/// A template that displays a login form.
-///
-/// Provides a basic structure for a login page.
-/// Contains a login form with fields for email and password.
+/// A template for the login page.
 class LoginTemplate extends StatelessWidget {
-  /// Creates a [LoginTemplate].
-  ///
-  /// The [title] and [onLogin] parameters must not be null.
+  final GlobalKey<FormState> formKey;
+  final TextEditingController emailController;
+  final TextEditingController passwordController;
+  final VoidCallback onLogin;
+  final VoidCallback onNavigation;
+  final Widget? header;
+
   const LoginTemplate({
     super.key,
-    required this.title,
+    required this.formKey,
+    required this.emailController,
+    required this.passwordController,
     required this.onLogin,
+    required this.onNavigation,
+    this.header,
   });
-
-  /// The title to be displayed in the AppBar.
-  final String title;
-
-  /// The callback that is called when the login button is tapped.
-  /// Receives the email and password as parameters.
-  final void Function(String email, String password) onLogin;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: LoginFormWidget(
-          onLogin: (email, password) {
-            onLogin(email, password);
-          },
-        ),
+    return AuthTemplate(
+      title: 'Iniciar Sesión',
+      form: Column(
+        children: [
+          if (header != null) header!,
+          LoginFormWidget(
+            formKey: formKey,
+            emailController: emailController,
+            passwordController: passwordController,
+            onLogin: onLogin,
+          ),
+          const SizedBox(height: 20),
+          RichText(
+            text: TextSpan(
+              text: '¿No tienes cuenta? ',
+              children: [
+                TextSpan(
+                  text: ' Regístrate',
+                  style: const TextStyle(color: Colors.blue),
+                  recognizer: TapGestureRecognizer()..onTap = onNavigation,
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

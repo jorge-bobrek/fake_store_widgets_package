@@ -22,7 +22,7 @@ class PagesTabPage extends StatelessWidget {
         body: const TabBarView(
           children: [
             /// A link to the [LoginPage].
-            LoginPage(),
+            //LoginPage(),
             
             /// A link to the [ProfileListPage].
             ProfileListPage(),

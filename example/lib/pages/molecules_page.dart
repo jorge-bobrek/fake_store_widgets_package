@@ -14,7 +14,12 @@ class MoleculesPage extends StatelessWidget {
           children: [
             /// An example of [LabelledInputWidget].
             LabelledInputWidget(
-                label: 'Nombre de usuario', controller: TextEditingController()),
+              label: 'Nombre de usuario',
+              controller: TextEditingController(),
+              validator: (value) {
+                return null;
+              },
+            ),
             const SizedBox(height: 16),
 
             /// An example of [ProfileCardWidget].

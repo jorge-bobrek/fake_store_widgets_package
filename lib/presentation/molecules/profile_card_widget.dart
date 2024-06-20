@@ -25,7 +25,7 @@ class ProfileCardWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            LabelWidget(text: name),
+            LabelWidget(text: name, size: 16),
             const SizedBox(height: 8),
             Text(email),
           ],

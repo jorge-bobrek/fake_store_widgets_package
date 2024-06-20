@@ -25,7 +25,7 @@ class AtomsPage extends StatelessWidget {
             const SizedBox(height: 16),
 
             /// An example of [LabelWidget].
-            const LabelWidget(text: 'Esto es un label'),
+            const LabelWidget(text: 'Esto es un label', size: 16),
             const SizedBox(height: 8),
 
             /// An example of [IconButtonWidget].

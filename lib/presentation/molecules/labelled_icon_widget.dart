@@ -21,7 +21,7 @@ class LabelledIconWidget extends StatelessWidget {
     return Row(
       children: [
         IconButtonWidget(icon: icon, onPressed: onPressed),
-        LabelWidget(text: label),
+        LabelWidget(text: label, size: 16),
       ],
     );
   }

@@ -10,6 +10,7 @@ class LabelledInputWidget extends StatelessWidget {
     required this.label,
     required this.controller,
     this.obscureText = false,
+    required this.validator,
   });
 
   /// The text to display as the label.
@@ -19,17 +20,23 @@ class LabelledInputWidget extends StatelessWidget {
   /// Whether the text should be hidden (for example, for passwords).
   final bool obscureText;
 
+  final String? Function(String?)? validator;
+
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(label),
-        TextField(
-          controller: controller,
-          obscureText: obscureText,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 20.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(label),
+          TextFormField(
+            controller: controller,
+            obscureText: obscureText,
+            validator: validator,
+          ),
+        ],
+      ),
     );
   }
 }
