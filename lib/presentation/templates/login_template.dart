@@ -26,29 +26,32 @@ class LoginTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return AuthTemplate(
       title: 'Iniciar Sesión',
-      form: Column(
-        children: [
-          if (header != null) header!,
-          LoginFormWidget(
-            formKey: formKey,
-            emailController: emailController,
-            passwordController: passwordController,
-            onLogin: onLogin,
-          ),
-          const SizedBox(height: 20),
-          RichText(
-            text: TextSpan(
-              text: '¿No tienes cuenta? ',
-              children: [
-                TextSpan(
-                  text: ' Regístrate',
-                  style: const TextStyle(color: Colors.blue),
-                  recognizer: TapGestureRecognizer()..onTap = onNavigation,
-                ),
-              ],
+      form: SingleChildScrollView(
+        child: Column(
+          children: [
+            if (header != null) header!,
+            LoginFormWidget(
+              formKey: formKey,
+              emailController: emailController,
+              passwordController: passwordController,
+              onLogin: onLogin,
             ),
-          ),
-        ],
+            const SizedBox(height: 20),
+            RichText(
+              text: TextSpan(
+                text: '¿No tienes cuenta? ',
+                style: const TextStyle(color: Colors.black),
+                children: [
+                  TextSpan(
+                    text: ' Regístrate',
+                    style: const TextStyle(color: Colors.blue),
+                    recognizer: TapGestureRecognizer()..onTap = onNavigation,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
